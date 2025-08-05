@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuizMaster App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>QuizMaster</h1>
+  </header>
+
+  <main class="container">
+    <!-- Stats Panel -->
+    <section id="stats" class="card stats-card">
+      <div><strong>Correct:</strong> <span id="correct-count">0</span></div>
+      <div><strong>Incorrect:</strong> <span id="incorrect-count">0</span></div>
+      <button id="reset-btn" class="btn-outline">Reset Stats</button>
+    </section>
+
+    <!-- Difficulty Selection -->
+    <section id="select-difficulty" class="card">
+      <h2>Select Difficulty</h2>
+      <form id="difficulty-form">
+        <select id="difficulty" required>
+          <option value="">-- Choose Level --</option>
+          <option value="Easy">Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>
+        </select>
+        <button type="submit" class="btn-fill">Get Question</button>
+      </form>
+    </section>
+
+    <!-- Question Panel -->
+    <section id="question-panel" class="card hidden">
+      <h2 id="question-text" class="question-title"></h2>
+      <form id="answer-form">
+        <div id="choices" class="choices"></div>
+        <button type="submit" class="btn-fill">Submit Answer</button>
+      </form>
+      <div class="nav-buttons">
+        <button id="next-question" class="btn-outline hidden">Next Question</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
