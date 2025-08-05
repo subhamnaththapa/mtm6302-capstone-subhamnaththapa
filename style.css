@@ -2,7 +2,7 @@
 * { margin:0; padding:0; box-sizing:border-box; }
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
-  background: #F0F8FF;
+  background: #B2E3FF;
   color: #222;
   display: flex; flex-direction: column;
   min-height: 100vh;
@@ -37,13 +37,18 @@ header h1 {
 }
 .stats-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  gap: 2rem; 
+  margin-bottom: 1rem;
 }
 .stats-card div {
   font-size: 1.25rem;
+  margin-right: 1rem; /* Space between stats */
 }
-
+.stats-card button {
+  margin-left: auto; /* Push button to the right */
+}
 /* Section headings */
 h2 {
   font-size: 1.5rem;
